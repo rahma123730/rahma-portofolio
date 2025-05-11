@@ -1,76 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Rahma</title>
-    <link rel="stylesheet" href="styles.css">
+	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  *****   Link To Font Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--  *****   Link To Owl Carousel   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	<!--  *****   Title Icon   *****  -->
+	<link rel="icon" href="images/sekolah/logo smk.png" type="image" sizes="16x16">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>UTS DPW</title>
 </head>
 <body>
-    <header id="home">
-        <div class="hero-content fade-in"> 
-            <h1>Halo, saya <span id="name">Rahma Aulia Dini</span></h1> 
-            <p>Frontend Development | Mahasiswa Informatika S1</p> 
-        </div>
-    </header> 
+<!--   *** Website Container Starts ***   -->
+<div class="website-container">
+	
+<!--   *** Home Section Starts ***   -->
+<section class="home" id="home">
+	<!--   === Main Navbar Starts ===   -->
+	<nav class="main-navbar">
+		<a href="#" class="logo">
+			<img src="">
+		</a>
+		<ul class="nav-list">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#kompentensi">Deskripsi Bakat</a></li>
+			<li><a href="#courses">Bakat yang diminati</a></li>
+			<li><a href="#categories">Informasi</a></li>
+			<li><a href="#testimonials">Testimoni</a></li>
+			<li><a href="#footer">Kontak</a></li>
+		</ul>
+		<a href="#" class="get-started-btn-container">
+			<button class="get-started-btn btn"><a href="login.html" class="logout-a">Logout</a></button>
+		</a>
+		<div class="menu-btn">
+			<span></span>
+		</div>
+	</nav>
+	<!--   === Main Navbar Ends ===   -->
+	<!--   === Banner Starts ===   -->
+	<div class="banner">
+		
+		<div class="banner-desc">
+			<h2>Selamat Datang di Portal SMK INSAN MANDIRI GARUT!</h2>
+			<p>Di SMK INI, kami percaya bahwa setiap orang memiliki potensi untuk mencapai lebih. Dengan pilihan kursus yang meliputi Belajar Coding, Course SNBT untuk persiapan ujian, hingga editing kreatif, kami hadir untuk membantu Anda mengembangkan keterampilan dan menghadapi tantangan masa depan. Bersama, mari kita raih masa depan yang lebih cerah. Bersama, Kita Bisa!</p>
+			<form class="search-bar">
+				<input type="search" placeholder="Cari Bakat yang diminati">
+				<i class="fa-solid fa-search"></i>
+			</form>
+		</div>
 
-    <section id="about" class="fade-in">
-        <h2>Tentang Saya</h2> 
-        <div class="about-content">
-            <img src="komputer grafis.jpg" alt="foto profil" class="profile-img"> 
-            <p>Halo! Saya adalah mahasiswa informatika yang tertarik dengan dunia pemrograman web.</p> 
-        </div>
-    </section>
+		<div class="banner-img">
+			<div class="banner-img-container">
+				<img src="images/sekolah/home.jpeg">
+			</div>
+		</div>
 
-    <section id="skills" class="fade-in">
-        <h2>Keahlian Saya</h2>
-        <div class="skill-container">
-            <div class="skill">
-                <img src="https://th.bing.com/th/id/OIP.ZF-u4i5O7xY4NuQGJATq8QHaEK?w=333&h=187&c=7&r=0&o=5&cb=iwc2&pid=1.7" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="skill">
-                <img src="https://th.bing.com/th/id/OIP.r2ku5cozsNDfe94TaF3NNQHaEK?cb=iwc2&rs=1&pid=ImgDetMain" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="skill">
-                <img src="https://th.bing.com/th/id/OIP.dZPSAnx_I6P3Sw9qXZQODAHaHa?cb=iwc2&rs=1&pid=ImgDetMain" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-        </div>
-    </section>
+	</div>
+	<!--   === Banner Ends ===   -->
+</section>
+<!--   *** Home Section Ends ***   -->
 
-    <section id="projects" class="fade-in">
-        <h2>Proyek Saya</h2>
-        <div class="project-container">
+<!--   *** Partners Section Starts ***   -->
+<section class="partners">
+	<h3>SMK HEBAT SMK BISA</h3>
+	<div class="owl-carousel owl-theme partners-slider">
 
-            <div class="project-card">
-                <h3>Proyek 1</h3>
-                <p>Deskripsi singkat proyek. Penjelasan tentang proyek, pokoknya lorem ipsum.</p>
-                <a href="#" class="btn">Lihat Proyek</a>
-            </div>
+    	<div class="item brand-item">
+    		<img src="images/brand-logos/matoontapa.png">
+    	</div>
+    	<div class="item brand-item">
+    		<img src="images/brand-logos/khostan.png">
+    	</div>
+    	<div class="item brand-item">
+    		<img src="images/brand-logos/etimadya.png">
+    	</div>
+    	<div class="item brand-item">
+    		<img src="images/brand-logos/torghar.png">
+    	</div>
+    	<div class="item brand-item">
+    		<img src="images/brand-logos/nadershakot.png">
+    	</div>
+    	<div class="item brand-item">
+    		<img src="images/brand-logos/almarah.png">
+    	</div>
 
-            <div class="project-card">
-                <h3>Proyek 2</h3>
-                <p>Deskripsi singkat proyek. Penjelasan tentang proyek, pokoknya lorem ipsum.</p>
-                <a href="#" class="btn">Lihat Proyek</a>
-            </div>
+	</div>
+</section>
+<!--   *** Partners Section Ends ***   -->
 
-            <div class="project-card">
-                <h3>Proyek 3</h3>
-                <p>Deskripsi singkat proyek. Penjelasan tentang proyek, pokoknya lorem ipsum.</p>
-                <a href="#" class="btn">Lihat Proyek</a>
-            </div>
+<!--   *** kompentensi Section Starts ***   -->
+<section class="kompentensi" id="kompentensi">
+	<!--   *** kompentensi Header Starts ***   -->
+	<header class="section-header">
+		<h1>Kompetensi Bakat</h1>
+		<p>SMK Insan Mandiri Garut memiliki 3 kompetensi keahlian yaitu Otomatisasi dan Tata Kelola Perkantoran(OTKP), Farmasi dan Teknik Sepeda Motor. Dengan kepercayaan masyarakat diharapkan SMK Insan Mandiri Garut mampu menjadi lembaga pendidikan yang mampu bersaing dan menghasilkan lulusan-lulusan terbaik yang mandiri dan siap bekerja.</p>
+	</header>
+	<!--   *** Header Ends ***   -->
+	<!--   *** Contents Starts ***   -->
+	<div class="kompentensi-contents">
 
-            <div class="project-card">
-                <h3>Proyek 4</h3>
-                <p>Deskripsi singkat proyek. Penjelasan tentang proyek, pokoknya lorem ipsum.</p>
-                <a href="#" class="btn">Lihat Proyek</a>
-            </div>
+		<div class="kompentensi-box">
+			<div class="kompentensi-icon">
+				<i class="fa-solid fa-calendar"></i>
+			</div>
+			<div class="kompentensi-desc">
+				<h2>Administrasi Perkantoran</h2>
+				<p>Administrasi Perkantoran (AP) merupakan salah satu Kompetensi Keahlian dari Program Keahlian Manajemen Perkantoran pada Bidang Keahlian Bisnis dan Manajemen.</p>
+			</div>
+		</div>
 
-        </div>
-    </section>
+		<div class="kompentensi-box">
+			<div class="kompentensi-icon">
+				<i class="fa-solid fa-users"></i>
+			</div>
+			<div class="kompentensi-desc">
+				<h2>Farmasi </h2>
+				<p>Materi utama jurusan ini adalah ilmu pengobatan, di mana siswa di dorong untuk melihat proses pembuatan obat dan hal lain yang perlu diketahui oleh apoteker seperti interaksi senyawa kimia pada obat.</p>
+			</div>
+		</div>
 
-    <script src="script.js"></script>
+		<div class="kompentensi-box">
+			<div class="kompentensi-icon">
+				<i class="fa-solid fa-clock"></i>
+			</div>
+			<div class="kompentensi-desc">
+				<h2>Teknik Sepeda Motor</h2>
+				<p>kompetensi keahlian pada Bidang Studi Keahlian Teknologi dan Rekayasa Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan sepeda motor roda dua.</p>
+			</div>
+		</div>
+
+	</div>
+	<!--   *** kompentensi Contents Ends ***   -->
+</section>
+<!--   *** kompentensi Section Ends ***   -->
+
+<!--   *** Courses Section Starts ***   -->
+<section class="courses" id="courses">
+	<!--   *** Courses Header Starts ***   -->
+	<header class="section-header">
+		<div class="header-text">
+			<h1>Ekstrakurikuler</h1>
+			<p>Mendukung pengembangan personal peserta didik melalui perluasan minat, pengembangan potensi, dan pemberian kesempatan unuk pembentukan karakter dan pelatihan kepemimpinan.</p>
+		</div>
+		<button class="courses-btn btn">View All</button>
+	</header>
+	<!--   *** Courses Header Ends ***   -->
+	<!--   *** Courses Contents Starts ***   -->
+	<div class="course-contents">
+		
+		<div class="course-card">
+			<img src="images/courses/course-1.jpg">
+			<div class="category">
+				<div class="subject"><h3>Pramuka</h3></div>
+				<img src="images/sekolah/logo smk.png">
+			</div>
+			<h2 class="course-title">Ekstrakurikuler:Singkatan dari praja muda karana, yang memiliki arti rakyat muda yang suka berkarya</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-file"></i> Informasi</span>
+				<span><i class="fa-solid fa-users"></i> 100 Anggota</span>
+			</div>
+			<div class="course-ratings">
+				<span><b></b>Ikuti</span>
+			</div>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/course-2.jpg">
+			<div class="category">
+				<div class="subject"><h3>Paskibra</h3></div>
+				<img src="images/sekolah/logo smk.png">
+			</div>
+			<h2 class="course-title">Ekstrakurikuler:Untuk melatih kekompakan dan membentuk nilai-nilai penting dalam diri.</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-file"></i> Informasi</span>
+				<span><i class="fa-solid fa-users"></i> 30 Anggota</span>
+			</div>
+			<div class="course-ratings">
+				<span><b></b>Ikuti</span>
+			</div>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/course-3.jpg">
+			<div class="category">
+				<div class="subject"><h3>PMR</h3></div>
+				<img src="images/sekolah/logo smk.png">
+			</div>
+			<h2 class="course-title">Ekstrakurikuler: kegiatan di sekolah yang berfokus pada kegiatan sosial kemanusiaan. Yang membantu siswa jika Sakit</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-file"></i> Informasi</span>
+				<span><i class="fa-solid fa-users"></i> 20 Anggota</span>
+			</div>
+			<div class="course-ratings">
+				<span><b></b>Ikuti</span>
+			</div>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/course-4.jpg">
+			<div class="category">
+				<div class="subject"><h3>Futsal</h3></div>
+				<img src="images/sekolah/logo smk.png">
+			</div>
+			<h2 class="course-title">Ekstrakurikuler: Yaitu meningkatkan keterampilan motorik, keseimbangan, koordinasi, dan kebugaran fisik pada siswa.</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-file"></i> Informasi</span>
+				<span><i class="fa-solid fa-users"></i> 50 Anggota</span>
+			</div>
+			<div class="course-ratings">
+				<span><b></b>Ikuti</span>
+			</div>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/course-5.jpg">
+			<div class="category">
+				<div class="subject"><h3>IT CLUB</h3></div>
+				<img src="images/sekolah/logo smk.png">
+			</div>
+			<h2 class="course-title">Ekstrakurikuler:  membahas bidang informasi dan teknologi yang berkaitan dengan dunia perkomputeran dan internet. </h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-file"></i> Informasi</span>
+				<span><i class="fa-solid fa-users"></i> 40 Anggota</span>
+			</div>
+			<div class="course-ratings">
+				<span><b></b>Ikuti</span>
+			</div>
+		</div>
+
+		<div class="course-card">
+			<img src="images/courses/course-6.jpg">
+			<div class="category">
+				<div class="subject"><h3>Voli</h3></div>
+				<img src="images/sekolah/logo smk.png">
+			</div>
+			<h2 class="course-title">Ekstrakurikuler: kesempatan bagi siswa untuk belajar dan mengembangkan keterampilan dalam bermain bola voli.</h2>
+			<div class="course-desc">
+				<span><i class="fa-solid fa-file"></i> Informasi</span>
+				<span><i class="fa-solid fa-users"></i> 45 Anggota</span>
+			</div>
+			<div class="course-ratings">
+				<span><b></b>Ikuti</span>
+			</div>
+		</div>
+
+	</div>
+	<!--   *** Courses Contents Ends ***   -->
+</section>
+<!--   *** Courses Section Ends ***   -->
+
+<!--   *** Courses Categories Section Starts ***   -->
+<section class="categories" id="categories">
+	<!--   === Categories Section Header Starts ===   -->
+	<header class="section-header">
+		<h1>PENGUMUMAN TERKINI</h1>
+		<p>Berikut dibawah ini merupakan berita terkini terkait <B>SMK Insan Mandiri Garut</B></p>
+	</header>
+	<!--   === Categories Section Header Ends ===   -->
+	<!--   === Categories Section Contents Starts ===   -->
+	<div class="categories-contents">
+		
+		<div class="category-item">
+			<div class="category-icon">
+				<i class="fa-solid fa-bullhorn"></i>
+			</div>
+			<div class="category-desc">
+				<h3>PENILAIAAN AKHIR SEMESTER</h3>
+				<p>
+					Penilaian Akhir Semester atau disingkat PAS akan dilaksanakan pada hari Senin tanggal 03 Desember 2024 mulai pukul 07.30. Diharapkan semua siswa/i sudah berada diruangannya masing-masing pada jam yang telah ditentukan. Untuk informasi ruangan, tata tertib, dan denah lokasi bisa dilihat pada postingan fanspage Facebook SMK Insan Mandiri Garut di bawah ini. <a href="#">jadwalpas2024</a></p>
+			</div>
+		</div>
+
+		<div class="category-item">
+			<div class="category-icon">
+				<i class="fa-solid fa-bullhorn"></i>
+			</div>
+			<div class="category-desc">
+				<h3>PERLOMBAAN</h3>
+				<p>Ada kabar gembira nih!!!
+					OSIS SMK Insan Mandiri Garut kembali hadir mengadakan lomba dalam acara "Gebyar Anniversary Of SMK IMG 14 TH" yang siap menampung benih-benih berkualitas dari jiwa-jiwa yang hebat. yang ditujukan bagi siswa-siswi SMP/MTs/sederajat. Kami mengadakan acara ini untuk menggali potensi yang dimiliki siswa-siswi SMP/Mts Sederajat dengan cara bersaing sehat dalam menggapai prestasi serta mengeluarkan segenap kemampuan dengan rasa positif, sportif, dan kreatif. <a href="#">daftarsekarang</a>
+					</p>
+			</div>
+		</div>
+
+		<div class="category-item">
+			<div class="category-icon">
+				<i class="fa-solid fa-bullhorn"></i>
+			</div>
+			<div class="category-desc">
+				<h3>PPDB</h3>
+				<p>SMK INSAN MANDIRI GARUT telah membuka penerimaan siswa baru tahun pelajaran 2024/2025 untuk program keahlian Otomatisasi dan Tata Kelola Perkantoran (OTKP), Farmasi Klinis dan Komunitas (FARMASI) dan Teknik & Bisnis Sepeda Motor (TBSM). <a href="https://docs.google.com/forms/d/e/1FAIpQLScoUNh5bAHHnzI7RWRj-kOTqE8l3RtAK6yRQmWG1ZyfWOyvCw/viewform">daftarppdbsmkinsanmandirigarut</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="category-item">
+			<div class="category-icon">
+				<i class="fa-solid fa-bullhorn"></i>
+			</div>
+			<div class="category-desc">
+				<h3>Terkini</h3>
+				<p>Selamat dan Sukses Kepada <b>Apt. Yusi Intan Gantina, S.Farm.</b>, Kaprog Jurusan Farmasi. Atas diraihnya Gelar Profesi Apoteker. Mudah²an ilmu dan gelar yang didapatkan, berkah serta bermanfaat. Aamin
+					<a href="https://www.facebook.com/100063624948529/posts/pfbid0XEpNnA9UyQxFkmMAhDXqDS2EvRa8E4kJ2Suht9i6XnApVJb883t18SQy7rCjmuJgl/?app=fbl">24maret2024</a></p>
+			</div>
+		</div>
+
+	</div>
+	<!--   === Categories Section Contents Ends ===   -->
+</section>
+<!--   *** Courses Categories Section Ends ***   -->
+
+<!--   *** Teacher Section Starts ***   -->
+<section class="instructor">
+	<div class="instructor-container">
+		<h2>SMK HEBAT SMK BISA</h2>
+		<p>"Taklukkan hari ini, dan ciptakan masa depanmu di SMK kami. Di sini, kami membuka pintu untuk menyambut bakatmu, mengasah keterampilanmu, dan merangkul impianmu. Bergabunglah dengan komunitas kami dan bersiaplah untuk mengukir cerita suksesmu yang tak terlupakan."</p>
+		<button class="teacher-btn btn">Selengkapnya</button>
+	</div>
+</section>
+<!--   *** Teacher Section Ends ***   -->
+
+<!--   *** Testimonials Section Starts ***   -->
+<section class="testimonials" id="testimonials">
+	<!--   === Testimonials Section Header Starts ===   -->
+	<header class="section-header">
+		<h1>Komentar</h1>
+		<p>Tuliskan Komentar anda dibawah ini Sesuai hati anda mengenai Website Sekolah ini. Komentar kalian sangat berarti untuk kami</p>
+	</header>
+	<!--   === Testimonials Section Header Ends ===   -->
+	<!--   === Testimonials Contents Starts ===   -->
+	<div class="owl-carousel owl-theme testimonials-slider">
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student-2.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Kayla Azkia</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    		<p>Website SMK ini sangat informatif dan mudah digunakan. Saya dengan cepat menemukan semua informasi yang saya butuhkan tentang program-program pendidikan, kegiatan ekstrakurikuler, dan fasilitas yang disediakan oleh sekolah</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student-4.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Muzib Latif</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    		<p>Desain website SMK ini sangat menarik dan ramah pengguna. Tampilannya bersih dan terorganisir dengan baik, membuat saya merasa nyaman dan mudah untuk menjelajah dan menemukan apa yang saya cari. Nilai 99.99999</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student-1.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Rahma Aulia Dini</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    		<p>Fitur notifikasi dan pengingat di website ini sangat membantu dalam menjaga keterlibatan orang tua dan siswa. Saya menghargai bahwa saya dapat tetap up-to-date dengan semua pengumuman, jadwal ujian, dan acara penting melalui pesan singkat atau email.</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+    	<div class="item testimonials-item">
+    		<div class="profile">
+    			<div class="profile-image">
+    				<img src="images/testimonials/student-5.jpg">
+    			</div>
+    			<div class="profile-desc">
+    				<span>Titin Kartini</span>
+    				<span>Description</span>
+    			</div>
+    		</div>
+    		<p>Saya sangat menghargai fitur interaktif yang disediakan oleh website SMK ini, seperti formulir pendaftaran online dan kalender acara sekolah yang terus diperbarui. Ini membantu menjadikan pengalaman navigasi saya lebih lancar dan efisien.</p>
+    		<div class="quote">
+    			<i class="fa fa-quote-left"></i>
+    		</div>
+    		<div class="ratings">
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    			<i class="fa-solid fa-star"></i>
+    		</div>
+    	</div>
+
+	<!--   === Testimonials Contents Ends ===   -->
+</section>
+<!--   *** Testimonials Section Ends ***   -->
+
+<!--   *** Footer Section Starts ***   -->
+<section class="footer" id="footer">
+	
+	<!--   === Footer Contents Starts ===   -->
+	<div class="footer-contents">
+		
+		<div class="footer-col footer-col-1">
+			<div class="col-title">
+				<img src="images/sekolah/logo2.png">
+			</div>
+			<div class="col-contents">
+				<p>Kami dengan senang hati mengumumkan bahwa SMK kami membuka penerimaan siswa baru untuk tahun ajaran 2024-2025. Sebagai sekolah yang berkomitmen untuk memberikan pendidikan berkualitas dan persiapan karir yang kokoh, kami mengundang Anda untuk menjadi bagian dari komunitas belajar kami.</p>
+				<p> <a href="#">Daftarkan diri anda sekarang</a></p>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-2">
+			<div class="col-title">
+				<h3>Kontak</h3>
+			</div>
+			<div class="col-contents">
+				<div class="contact-row">
+					<span>Alamat</span>
+					<span>Kec. Banjarwangi, Kabupaten Garut, Jawa Barat 44172</span>
+				</div>
+				<div class="contact-row">
+					<span>Phone</span>
+					<span>+62 813-9495-2172</span>
+				</div>
+				<div class="contact-row">
+					<span>Website</span>
+					<span>hhtps://portalsmkinsanmandirigarut.com</span>
+				</div>
+				<div class="contact-row">
+					<span>Email</span>
+					<span>smkinsanmandirigarut@gmail.com</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-3">
+			<div class="col-title">
+				<h3>Daftar</h3>
+			</div>
+			<div class="col-contents">
+				<a href="#home">Home</a>
+				<a href="#services">Kompetensi Keahlian</a>
+				<a href="#courses">Ekstrakurikuler</a>
+				<a href="#categories">Informasi</a>
+				<a href="#testimonials">Testimoni</a>
+				<a href="#footer">Kontak</a>
+			</div>
+		</div>
+
+		<div class="footer-col footer-col-3">
+			<div class="col-title">
+				<h3>Soial Media</h3>
+			</div>
+			<div class="col-contents">
+				<a href="#https://smk-insanmandiri-garut.blogspot.com/p/profil-umum.html">Facebook</a>
+				<a href="#services">Instagram</a>
+				<a href="#courses">BLOG</a>
+				<a href="#categories">Tiktok</a>
+				<a href="#testimonials">Tweeter</a>
+			</div>
+		</div>
+
+	</div>
+	<!--   === Footer Contents Ends ===   -->
+	<div class="copy-rights">
+		<p>&copy; 2025 <span>Rahma Aulia Dini</span></p>
+	</div>
+
+</section>
+<!--   *** Footer Section Ends ***   -->
+</div>
+<!--   *** Website Container Ends ***   -->
+
+<!--   *** Link To JQuery ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!--   *** Link To Owl Carousel ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *** Link To Curstom Script File ***   -->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

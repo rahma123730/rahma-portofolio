@@ -1,23 +1,79 @@
-// Fungsi untuk cek apakah elemen terlihat di viewport
-function isInView(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+// Script File
+
+// Home Section Starts
+var menuBtn = document.querySelector('.main-navbar .menu-btn');
+var menuList = document.querySelector('.main-navbar .nav-list');
+var menuListItems = document.querySelectorAll('.nav-list li a');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menuList.classList.toggle('active');
+});
+
+for(var i = 0; i < menuListItems.length; i++){
+	menuListItems[i].addEventListener('click', menuItemClicked);
+}
+function menuItemClicked(){
+	menuBtn.classList.remove('active');
+	menuList.classList.remove('active');
 }
 
-// Ambil semua elemen dengan class .fade-in
-const fadeElements = document.querySelectorAll('.fade-in');
+var homeSection = document.querySelector('.home');
+window.addEventListener('scroll', pageScrollFunction);
+window.addEventListener('load', pageScrollFunction);
 
-// Cek setiap elemen saat halaman di-scroll
-function checkScroll() {
-    fadeElements.forEach(element => {
-        if (isInView(element)) {
-            element.classList.add('visible');  // Tambahkan class "visible"
+function pageScrollFunction(){
+	if(window.scrollY > 120){
+		homeSection.classList.add('active');
+	}
+	else{
+		homeSection.classList.remove('active');
+	}
+}
+// Home Section Ends
+
+// Partners Section Starts 
+$('.partners-slider').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    margin:10,
+    nav:true,
+    navText:["<i class='fa-solid fa-arrow-left'></i>",
+             "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        500:{
+            items:2
+        },
+        700:{
+            items:3
+        },
+        1000:{
+        	items:5
         }
-    });
-}
+    }
+})
+// Partners Section Ends 
 
-// Jalankan fungsi checkScroll saat scroll terjadi
-window.addEventListener('scroll', checkScroll);
-
-// Panggil fungsi checkScroll saat pertama kali halaman dimuat untuk elemen yang sudah terlihat
-document.addEventListener('DOMContentLoaded', checkScroll);
+// Testimonials Section Starts
+$('.testimonials-slider').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:6000,
+    margin:10,
+    nav:true,
+    navText:["<i class='fa-solid fa-arrow-left'></i>",
+             "<i class='fa-solid fa-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        }
+    }
+})
+// Testimonials Section Ends
